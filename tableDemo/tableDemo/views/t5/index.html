@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮应用</title>
+    <script type="text/javascript" src="../../vue.js"></script>
+    <link href="../../TableComponent/TableComponent.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../TableComponent/TableComponent.js"></script>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            height: 100%;
+            overflow: hidden
+        }
+        .background{
+            background-color: #26B;
+            border:1px solid #014889;
+            color: #fff;
+            height: 28px;
+            width:60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="tableContainer" style="width:100%;bottom: 0;top:0;position: absolute;left:0">
+    <table-component v-ref:table :get-data="getdata" :table-headers="gridHeaders" :table-data="gridStaticData" :record-total="recordCount" :size="customSize" :show-checkbox="showCheckBox"></table-component>
+    <!--<table-component v-ref:table :get-data="getdata" :table-headers="gridHeaders"  :size="customSize" ></table-component>-->
+</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>

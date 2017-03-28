@@ -1,0 +1,144 @@
+.table-sortSign {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url(table-sort.gif);
+    background-repeat: no-repeat;
+    background-position: 5px -112px;
+}
+
+.table-container{                                     /*表格父容器div样式*/
+    position: absolute;
+    top:0;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    overflow:auto;
+}
+
+.table-class{                                         /*表格样式*/
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    font: normal 12px/1.5em '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
+    table-layout: fixed;
+}
+
+.table-class td,th{
+    padding: 0;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid white;
+    box-sizing: content-box;
+}
+
+.table-class td{
+    overflow: 	hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table-tdControl{                                     /*表格td内部div样式*/
+    width:100%;
+    height: 30px;
+    min-height: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.table-theadTr{
+    background: rgba(2,156,255,0.2);                     /*表头背景色*/
+}
+
+.table-dark{                                             /*表格tr明暗背景色*/
+    background: rgba(2,156,255,0.3);
+}
+
+.table-dark:hover{
+    background: rgba(2,156,255,0.5);
+}
+
+.table-light{                                           /*表格tr明暗背景色*/
+    background: rgba(2,156,255,0.2);
+}
+
+.table-light:hover{
+    background: rgba(2,156,255,0.5);
+}
+
+.table-paginationContainer{                         /*表格分页容器div样式*/
+    height: 50px;
+    position: absolute;
+    right: 0;
+    left:0;
+    bottom: 0;
+}
+
+.table-pagination{                                    /*表格上下页样式*/
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+    padding-left: 0;
+}
+
+.table-pagination li{
+    display: inline;
+}
+
+
+.table-pagination li a{
+    position: relative;
+    float: left;
+    margin-top:12px;
+    padding: 4px 12px;
+    color: #ffffff;;
+    text-decoration:none;
+    background-color: #26B;
+    border: 1px solid #014889;
+}
+
+.table-selectContainer{                              /*表格当前页下拉框容器div样式*/
+    position: relative;
+    margin-top: 7px;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+
+.table-selectStyle{                                  /*表格当前页下拉框样式*/
+    background:rgba(0,41,93,0.6);
+    border:1px solid rgb(50, 115, 222);
+    height: 18px;
+    margin-top:5px;
+    color: #c1c1c1;
+    padding-left: 10px;
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table-skipButton{                                  /*表格跳转按钮样式*/
+    background-color: #26B;
+    border:1px solid #014889;
+    color: #fff;
+    height: 28px;
+    width:60px;
+    margin-top: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.table-skipPage{                                   /*表格跳转页文本框样式*/
+    background:rgba(0,41,93,0.6);
+    border:1px solid rgb(50, 115, 222);
+    height: 28px;
+    color: #c1c1c1;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
